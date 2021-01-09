@@ -12,10 +12,14 @@ import ReactDOM from 'react-dom';
 // import { Memorize } from './components/06-useMemos/Memorize'
 // import { MemoHook } from './components/06-useMemos/MemoHook'
 // import { CallbackHook } from './components/06-useMemos/CallbackHook'
-import { Padre } from './components/07-tarea-memo/Padre'
+// import { Padre } from './components/07-tarea-memo/Padre'
+// import './components/08-useReducer/intro-reducer'
+// import { TodoApp } from './components/08-useReducer/TodoApp'
+import { MainApp } from './components/09-useContext/MainApp'
+
 
 ReactDOM.render(
-    <Padre />,
+    <MainApp />,
   document.getElementById('root')
 );
 
