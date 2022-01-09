@@ -1,28 +1,24 @@
-import React, { useContext } from 'react'
-import { UserContext } from './UserContext'
+import React, { useContext } from 'react';
+import { UserContext } from './UserContext';
 
 export const LoginPage = () => {
+  const { user, setUser } = useContext(UserContext);
 
-    const { user, setUser } = useContext(UserContext)
-
-    const handleBtn = () => {
-        const param = {
+  return (
+    <div>
+      <h1>Login Page</h1>
+      <hr />
+      <button
+        className="btn btn-primary"
+        onClick={() =>
+          setUser({
             id: 123,
-            name: 'Kevin'
+            name: 'Kevin',
+          })
         }
-        setUser({param})
-    }
-
-    return (
-        <div>
-            <h1>Login Page</h1>
-            <hr/>
-            <button
-              className="btn btn-primary"
-              onClick={handleBtn}
-              >
-                Login
-            </button>
-        </div>
-    )
-}
+      >
+        Login
+      </button>
+    </div>
+  );
+};
